@@ -1,0 +1,109 @@
+
+@font-face {
+    font-family: Netflix-font-bd;
+    src: url(./font/NetflixSans_W_Bd.woff2);
+}
+@font-face {
+    font-family: Netflix-font-rg;
+    src: url(./font/NetflixSans_W_Rg.woff2);
+}
+*{
+    font-family: Netflix-font-rg;
+}
+.logo{
+    width: 150px;
+}
+
+.arkaplan{
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url(./img/arkaplan.jpg);
+    height: 120dvh;
+}
+.title{
+    font-family: Netflix-font-bd;
+    font-size: 48px;
+    font-weight: 900;
+}
+#e-mail,#e-mail2{
+    height: 56px;
+    width: 400px;
+    border: 1px solid gray;
+    background-color: #141210ae;
+}
+.btn-boyut{
+    width: 100px;
+    height: 56px;
+}
+.position-label{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size: 15px;
+    color: gray;
+    transition: .5s;
+}
+.lbl-active{
+    left: 5px;
+    top: 2px;
+    font-size: 13px;
+}
+.cizgi{
+    border: 4px solid gray;
+}
+
+.resim-position{
+    top: -50px;
+    left: 0px;
+}
+
+.accordion-title:hover{
+    background-color:#161a1e !important;
+}
+.accordion-yazi{
+    height: 0px;
+    overflow: hidden;
+}
+.accordion-aktif{
+    height: 100%;
+    padding: 20px;
+}
+.carpi{
+    transform: rotate(45deg);
+}
+.logoLog{
+    width: 15%;
+}
+.oturum{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+@media (max-width:992px){
+    .resim-position{
+        top: 0;
+    }
+    .title{
+        font-family: Netflix-font-bd;
+        font-size: 36px;
+        
+    }
+}
+@media (max-width:768px){
+    .btn-boyut{
+        width: 200px;
+        height: 36px;
+    }
+    
+}
+
+@media (max-width:450px){
+    #e-mail{
+        height: 56px;
+        width: 200px;
+        border: 1px solid gray;
+        background-color: #141210ae;
+    }
+    .btn-boyut{
+        width: 100px;
+        height: 36px;
+    }
+}
